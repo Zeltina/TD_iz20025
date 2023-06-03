@@ -1,0 +1,550 @@
+<!-- Info about the author
+name: Iveta Zeltina
+student ID number: iz20025 -->
+<!DOCTYPE html>
+<!--<html>-->
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Mans stāsts</title>
+<link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/exam.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+var maxLength = 300;
+$(".show-read-more").each(function(){
+    var myStr = $(this).text();
+    if($.trim(myStr).length > maxLength){
+        var newStr = myStr.substring(0, maxLength);
+        var removedStr = myStr.substring(maxLength, $.trim(myStr).length);
+        $(this).empty().html(newStr);
+        $(this).append(' <a href="javascript:void(0);" class="read-more">read more...</a>');
+        $(this).append('<span class="more-text">' + removedStr + '</span>');
+    }
+});
+$(".read-more").click(function(){
+    $(this).siblings(".more-text").contents().unwrap();
+    $(this).remove();
+});
+});</script>
+</head>
+<body>
+<!-- Navbar -->
+<div class="top">
+  <div class="bar" id="myNavbar">
+    <a class="bar-item button hover-black hide-medium hide-large right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="bar-item button">HOME</a>
+    <a href="#about" class="bar-item button hide-small"><i class="fa fa-user"></i> PAR</a>
+    <a href="#education" class="bar-item button hide-small"><i class="fa fa-graduation-cap"></i> IZGLĪTĪBA</a>
+    <a href="#experience" class="bar-item button hide-small"><i class="fa fa-briefcase"></i> PIEREDZE</a>
+    <a href="#programming" class="bar-item button hide-small"><i class="fa fa-code"></i> PROGRAMMĒŠANA</a>
+    <a href="#interests" class="bar-item button hide-small"><i class="fa fa-heart"></i> INTERESES</a>
+    <a href="#challenges" class="bar-item button hide-small"><i class="fa fa-rocket"></i> IZAICINĀJUMI</a>
+    <a href="#contact" class="bar-item button hide-small"><i class="fa fa-envelope"></i> KONTAKTI</a>
+    <a href="file:///C:/Users/Iveta/LU/00_LU/Timekla%20dizains/LIELAIS%20DARBS/iz20025_2/index.html" class="bar-item button hide-small"><i class="fa  fa-globe"></i> EN</a>
+    <!-- <a href="#" class="bar-item button hide-small right hover-black">
+      <i class="fa fa-search"></i>
+    </a> -->
+  </div>
+
+  <!-- Navbar/small screens -->
+  <div id="navDemo" class="bar-block white hide hide-large hide-medium">
+    <a href="#about" class="bar-item button" onclick="toggleFunction()">PAR</a>
+    <a href="#education" class="bar-item button" onclick="toggleFunction()">IZGLĪTĪBA</a>
+    <a href="#experience" class="bar-item button" onclick="toggleFunction()">PIEREDZE</a>
+    <a href="#programming" class="bar-item button" onclick="toggleFunction()">PROGRAMMĒŠANA</a>
+    <a href="#interests" class="bar-item button" onclick="toggleFunction()">INTERESES</a>
+    <a href="#challenges" class="bar-item button" onclick="toggleFunction()">IZAICINĀJUMI</a>
+    <a href="#contact" class="bar-item button" onclick="toggleFunction()">KONTAKTI</a>
+    <a href="file:///C:/Users/Iveta/LU/00_LU/Timekla%20dizains/LIELAIS%20DARBS/iz20025_2/index.html" class="bar-item button" onclick="toggleFunction()">EN</a>
+    <!-- <a href="#" class="bar-item button">SEARCH</a> -->
+  </div>
+</div>
+
+
+<!-- First Parallax Image/Slogan Text -->
+<div class="bgimg-1 display-container opacity-min" id="home">
+  <div class="display-middle" style="white-space:nowrap;">
+    <span class="center padding-large black xlarge wide animate-opacity">MANS <span class="hide-small">PAŠAS</span> CEĻŠ</span>
+  </div>
+</div>
+
+<!-- Container/About -->
+<div class="content container padding-64" id="about">
+  <h1 class="center">PAR MANI</h1>
+  <h3 class="center"><em>CEĻĀ UZ VIRSOTNI</em></h3>
+  <p>Es esmu izzinātāja. Es uztveru dzīvi, kā izziņas procesu, kas man dod iespēju iepazīt sevi, citus un pasauli. Interesanti – mans dzīves vadmotīvs. Virzība – mans veids, kā es gūstu enerģiju un transformēju sev nozīmīgās lietās. Bez robežām jeb neuzlikt sev rāmi – mana pieeja lietām, kas ļauj nebaidīties paraudzīties ārpus kastes, eksperimentēt un iegūt jaunu noderīgu pieredzi. Apzinātība – darīt lietas apzināti, saskaņā ar sev vērtīgo un nepārtraukti reflektēt. Pieņemšana – pieņemt citādo, savādāko, pat, ja tas nav saskaņā ar manu izpratni par lietām un vērtībām. Apzināties, ka pasaule ir dažāda, ka cilvēki ir dažādi. Mana izpratne par lietām nav ne labāka, ne sliktāka – tā vienkārši ir mana. Priecāties un brīnīties – ikkatrs ikdienas piedzīvotais mirklis ir vērtība, ko jāspēj novērtēt.</p>
+  <div class="row">
+    <div class="col m6 center padding-large">
+      <p><b><i class="fa fa-user margin-right"></i>Iveta Zeltiņa</b></p><br>
+      <img src="images/portrait4.png" class="round image opacity hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="col m6 hide-small padding-large">
+      <p>Cilvēki – komunikācija ar citiem ļauj man labāk iepazīt sevi un iemācīties ne tikai ņemt, bet arī dot. Mācīties – tas ir interesanti, tāpēc to ir vērts darīt visas savas dzīves laikā, jo tikai interesanta dzīve ir vērtīga dzīve. Bez bailēm – dzīve ir brīvs lidojums un nepārtraukts sevis izzināšanas process. Nav vērts nožēlot zaudēto, jo pasaule ir pilna ar iespējām. Tās ir jāierauga, jāizvēlas un jābauda dzīves lidojuma process. Process – dzīve ir jāuztver kā process, kas nav tikai sākums un beigas, tad ir viegli sasniegt piepildījuma un laimes sajūtu. Nekādas gaidas – nevienam nekas nepienākas, man jāprot novērtēt to, kas ir dots. Darīt – viss ir tikai paša rokās. Baudīt dzīvi ceļā uz virsotni!</p>
+    </div>
+  </div>
+</div>
+
+<div class="row center dark-grey padding-16">
+  <div class="quarter section">
+    <span class="xlarge">IZGLĪTĪBA</span><br>
+    Nebeidzams process
+  </div>
+  <div class="quarter section">
+    <span class="xlarge">PIEREDZE</span><br>
+    Ne tikai mārketingā
+  </div>
+  <div class="quarter section">
+    <span class="xlarge">INTERESES</span><br>
+    Daudz un dažādas
+  </div>
+  <div class="quarter section">
+    <span class="xlarge">IZAICINĀJUMI</span><br>
+    Vienmēr un visur
+  </div>
+</div>
+
+<!-- Second Parallax Image/Education -->
+<div class="bgimg-2 display-container opacity-min">
+  <div class="display-middle">
+     <span class="xxlarge text-white wide">IZGLĪTĪBA</span>
+  </div>
+</div>
+
+<!-- Container/Education   -->
+<div class="content container padding-64" id="education">
+  <h1 class="center">MANA IZGLĪTĪBA</h1>
+  <h3 class="center"><em>NO EKONOMIKAS LĪDZ PROGRAMMĒŠANAI</em></h3><br>
+  <p class="center"><em>Tā kā mani interesē ļoti daudzas jomas, savulaik man bija grūti izvēlēties, kādu profesionālo ceļu izvēlēties. Es pavisam nejauši nokļuvu televīzijā, kur strādāju reklāmas un mārketinga nodaļā. Tāpēc mana sākotnējā izvēle bija ekonomika un biznesa vadība. Vēlāk savas zināšanas papildināju politikas zinātnes un sabiedrisko attiecību jomā, jo, strādājot reklāmas aģentūrā, uzņēmuma tēla veidošana un zīmola komunikācija bija neatņemama mārketinga stratēģijas sastāvdaļa. Un visbeidzot es nonācu līdz programmēšanai. Šobrīd studēju LU Datorikas fakultātē.</em></p><br>
+  <p class="center"><em>Klikšķini uz bildēm un uzzini vairāk</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="row-padding center">
+    <div class="col m3">
+      <img src="images/RTU.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Rīgas Tehniskā universitāte">
+      <!-- <p class="wide"><i class="fa fa-laptop"></i>Marketing</p> -->
+    </div>
+
+    <div class="col m3">
+      <img src="images/economicsLV.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bakalaura grāds sociālajās zinātnēs">
+      <!-- <p class="wide"><i class="fa fa-laptop"></i>Bachelor's Degree in Social Sciences</p> -->
+    </div>
+
+    <div class="col m3">
+      <img src="images/macibas1.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Pirmā līmeņa profesionālā augstākā izglītība Latvijas Universitātes Datorikas fakultātē">
+      <!-- <p class="wide"><i class="fa fa-laptop"></i>Marketing</p> -->
+    </div>
+
+    <div class="col m3">
+      <img src="images/relationsLV.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Maģistra grāds sociālajās zinātnēs">
+      <!-- <p class="wide"><i class="fa fa-laptop"></i>Marketing</p> -->
+    </div>
+  </div>
+
+  <div class="row-padding center section">
+    <div class="col m3">
+      <img src="images/politicsLV.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Maģistra grāds sociālajās zinātnēs">
+      <!-- <p class="wide"><i class="fa fa-laptop"></i>Marketing</p> -->
+    </div>
+
+    <div class="col m3">
+      <img src="images/macibas3.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Kvalifikācijas darbs: Klienta pasūtījumu datu sistēmas izveide MS Dynamics AX platformā">
+      <!-- <p class="wide"><i class="fa fa-laptop"></i>Marketing</p> -->
+    </div>
+
+    <div class="col m3">
+      <img src="images/programmingLV.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bakalaura studijas">
+      <!-- <p class="wide"><i class="fa fa-laptop"></i>Marketing</p> -->
+    </div>
+
+    <div class="col m3">
+      <img src="images/LU.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Latvijas Universitāte">
+      <!-- <p class="wide"><i class="fa fa-laptop"></i>Marketing</p> -->
+    </div>
+      <!--<button class="button padding-large light-grey" style="margin-top:64px">LOAD MORE</button>-->
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="modal black" onclick="this.style.display='none'">
+  <span class="button large black display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="modal-content animate-zoom center transparent padding-64">
+    <img id="img01" class="image">
+    <p id="caption" class="opacity large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image/Education -->
+<div class="bgimg-3 display-container opacity-min">
+  <div class="display-middle">
+     <span class="xxlarge text-white wide">PIEREDZE</span>
+  </div>
+</div>
+
+<!-- Container/Experience   -->
+<div class="content container padding-64" id="experience">
+  <h1 class="center">MANA PIEREDZE</h1>
+  <h3 class="center"><em>MĀRKETINGS, PĀRDOŠANA, PROGRAMMĒŠANA</em></h3><br>
+  <p class="center"><em>Man ir liela pieredze mārketinga un pārdošanas stratēģiju izstrādē B2B produktiem: programmatūra, mobilās lietotnes, mašīntulkošanas rīki, darbvirsmas korektūras rīki, tulkošanas un lokalizācijas pakalpojumi u.c. Es esmu veidojusi un vadījusi tiešsaistes un bezsaistes mārketinga kampaņas, realizējusi digitālā mārketinga stratēģijas: SMM, e-pasta mārketings, attēlojuma un meklēšanas reklāma u.c. Manos pienākumos ietilpa uzņēmuma reputācijas veidošana, sabiedriskās attiecības un pasākumu mārketings. Man ir pieredze darbā medijos, reklāmas un mediju aģentūrās, nekustamo īpašumu un tehnoloģiju uzņēmumos. Tagad esmu kļuvis par daļu no uzņēmuma MBIT, kas nodarbojas ar Microsoft Dynamics AX biznesa vadības sistēmas ieviešanu un uzturēšanu Latvijā un ārvalstīs.</em></p><br>
+  <p class="center"><em>Klikšķini uz bildēm un uzzini vairāk</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="row-padding center">
+    <div class="col m3">
+      <img src="images/LNT.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Latvijas Neatkarīgā Televīzija (LNT)">
+      <!-- <p class="wide"><i class="fa fa-laptop"></i>Marketing</p> -->
+    </div>
+
+    <div class="col m3">
+      <img src="images/MEC.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="MEC – viens no pasaulē vadošajiem mediju aģentūru tīkliem">
+      <!-- <p class="wide"><i class="fa fa-laptop"></i>Bachelor's Degree in Social Sciences</p> -->
+    </div>
+
+    <div class="col m3">
+      <img src="images/MediaHouse.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Media House - vadošā mediju plānošanas un pirkšanas aģentūra Latvijā">
+      <!-- <p class="wide"><i class="fa fa-laptop"></i>Marketing</p> -->
+    </div>
+
+    <div class="col m3">
+      <img src="images/Santa.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Izdevniecība ŽURNALS SANTA">
+      <!-- <p class="wide"><i class="fa fa-laptop"></i>Marketing</p> -->
+    </div>
+  </div>
+
+  <div class="row-padding center section">
+    <div class="col m3">
+      <img src="images/Tilde.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Tilde - vadošais tehnoloģiju lokalizācijas uzņēmums Baltijā">
+      <!-- <p class="wide"><i class="fa fa-laptop"></i>Marketing</p> -->
+    </div>
+
+    <div class="col m3">
+      <img src="images/DienasZurnali.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Izdevniecība Dienas Žurnāli">
+      <!-- <p class="wide"><i class="fa fa-laptop"></i>Marketing</p> -->
+    </div>
+
+    <div class="col m3">
+      <img src="images/Ztowers.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Zunda Towers - viens no augstākajiem ēku kompleksiem Baltijā">
+      <!-- <p class="wide"><i class="fa fa-laptop"></i>Marketing</p> -->
+    </div>
+
+    <div class="col m3">
+      <img src="images/MBIT.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="MBIT - informācijas tehnoloģiju uzņēmums">
+      <!-- <p class="wide"><i class="fa fa-laptop"></i>Marketing</p> -->
+    </div>
+      <!--<button class="button padding-large light-grey" style="margin-top:64px">LOAD MORE</button>-->
+  </div>
+
+  <p class="large center padding-16">MANAS PRASMES:</p>
+  <p class="wide"><i class="fa fa-comments"></i> Komunikācija</p>
+  <div class="light-grey">
+    <div class="container padding-small dark-grey center" style="width:95%">95%</div>
+  </div><br>
+  <p class="wide"><i class="fa fa-handshake-o"></i> Sadarbība</p>
+  <div class="light-grey">
+    <div class="container padding-small dark-grey center" style="width:90%">90%</div>
+  </div><br>
+  <p class="wide"><i class="fa fa-check-square"></i> Problēmu risināšana</p>
+  <div class="light-grey">
+    <div class="container padding-small dark-grey center" style="width:85%">85%</div>
+  </div><br>
+  <p class="wide"><i class="fa fa-users"></i> Komandas darbs</p>
+  <div class="light-grey">
+    <div class="container padding-small dark-grey center" style="width:80%">80%</div>
+  </div><br>
+
+</div>
+
+<!-- Modal for full size images on click-->
+<!-- <div id="modal01" class="modal black" onclick="this.style.display='none'">
+  <span class="button large black display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="modal-content animate-zoom center transparent padding-64">
+    <img id="img01" class="image">
+    <p id="caption" class="opacity large"></p>
+  </div>
+</div> -->
+
+<!-- Forhth Parallax Image/Education -->
+<div class="bgimg-4 display-container opacity-min">
+  <div class="display-middle">
+     <span class="xxlarge text-white wide">PROGRAMMĒŠANA</span>
+  </div>
+</div>
+
+<!-- Container/Programmig  -->
+<div class="content container padding-64" id="programming">
+  <h1 class="center">PROGRAMMĒŠANA</h1>
+  <h3 class="center"><em>INFORMĀCIJAS SISTĒMU IZSTRĀDĀTĀJA</em></h3><br>
+  <p class="center"><em>Informācijas sistēmu izstrādātāja | LU datorzinātņu bakalaura studiju programmas studente | X++ Objektorientētā valoda | Programmatūras inženierija (datu bāzes, IS, programmatūras testēšana)</em></p><br>
+  <p class="center"><em>Lai gan mana iepriekšējā izglītība un darba pieredze nav bijusi saistīta ar programmēšanu un IT jomu, tomēr tagad esmu izvēlējusies jaunu profesionālo ceļu. Šobrīd strādāju par informācijas sistēmu izstrādātāju ar X++ objektorientēto valodu. Domāju, ka mana mārketinga pieredze un jauniegūtā programmēšanas izglītība var dot pievienoto vērtību jebkura uzņēmuma komandai, paverot jaunu skatījumu un izpratni par lietām ikdienas darba procesā.</em></p><br>
+  <p class="center"><em>Klikšķini uz bildēm un uzzini vairāk</em></p><br>
+
+  <p class="large center padding-16">PRASMES UN ZINĀŠANAS:</p><br>
+
+  <div class="row-padding center">
+    <div class="col m3">
+      <img src="images/languages.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Programmēšanas valodas">
+      <p class="wide"><i class="fa fa-code"></i> Valodas</p><br>
+    </div>
+
+    <div class="col m3">
+      <img src="images/technologies.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Tehnoloģijas">
+      <p class="wide"><i class="fa fa-laptop"></i> Tehnoloģijas</p><br>
+    </div>
+
+    <div class="col m3">
+      <img src="images/DB.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Ar datu bāzēm saistītas valodas">
+      <p class="wide"><i class="fa fa-database"></i> DB valodas</p><br>
+    </div>
+
+    <div class="col m3">
+      <img src="images/Framework.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Ietvari">
+      <p class="wide"><i class="fa fa-th-large"></i> Ietvari</p><br>
+    </div>
+  </div>
+
+</div>
+
+<!-- Fifth Parallax Image/Interests -->
+<div class="bgimg-5 display-container opacity-min">
+  <div class="display-middle">
+    <span class="xxlarge text-white wide">INTERESES</span>
+  </div>
+</div>
+
+<!-- Container/Interests   -->
+<div class="content container padding-64" id="interests">
+  <h1 class="center">MANAS INTERESES</h1>
+  <h3 class="center"><em>TIK DAUDZ, KO VĒL IZMĒĢINĀT</em></h3><br>
+  <p class="center"><em>Jau daudzus gadus mana ikdiena nav iedomājama bez sporta aktivitātēm, jo tas mani uzlādē un dod enerģiju. Dejoju es jau kopš bērnības. Man patīk radoši izpausties gan virtuvē, gatavojot saviem bērniem vakariņas, gan aužot, gan gleznojot ar eļļas krāsām. Vasaras es labprāt pavadu laukos, darbojoties dārzā. Bet spilgtus iespaidus un jaunas idejas es gūstu, paņemot mugursomu, uzvelkot sporta apavus un dodoties dabā vai ceļojot ārpus Latvijas.</em></p><br>
+  <p class="center"><em>Klikšķini uz bildēm un uzzini vairāk</em></p><br>
+  <!-- <p class="center"><em>I have a very active lifestyle and many things that interest and excite me.<br> Click on the images to make them bigger</em></p><br> -->
+
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="row-padding center">
+    <div class="col m3">
+      <img src="images/sport1.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Skrējiens pa Rīgas ielām">
+      <p class="wide"><i class="fa fa-battery-full"></i> Sports</p><br>
+    </div>
+
+    <div class="col m3">
+      <img src="images/cooking1.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Mājās gatavota kūka - mmm, cik gardi">
+      <p class="wide"><i class="fa fa-cutlery"></i> Kulinārija</p><br>
+    </div>
+
+    <div class="col m3">
+      <img src="images/gardening1.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Dārza labumi ir visveselīgākie">
+      <p class="wide"><i class="fa fa-pagelines"></i> Dārzkopība</p><br>
+    </div>
+
+    <div class="col m3">
+      <img src="images/dancing1.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Dejošana Dziesmu un deju svētkos">
+      <p class="wide"><i class="fa fa-heart"></i> Dejošana</p><br>
+    </div>
+  </div>
+
+  <div class="row-padding center section">
+    <div class="col m3">
+      <img src="images/tautasterps.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Mans paša austais tautas tērps">
+      <p class="wide"><i class="fa fa-thumbs-up"></i> Etnogrāfija</p><br>
+    </div>
+
+    <div class="col m3">
+      <img src="images/painting1.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Iesācēja pirmie soļi eļļas glezniecībā">
+      <p class="wide"><i class="fa fa-paint-brush"></i> Gleznošana</p><br>
+    </div>
+
+    <div class="col m3">
+      <img src="images/ausana1.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Aušanas process">
+      <p class="wide"><i class="fa fa-life-ring"></i> Aušana</p><br>
+    </div>
+
+    <div class="col m3">
+      <img src="images/travelling1.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Gruzija - es nāku!">
+      <p class="wide"><i class="fa fa-plane"></i> Ceļošana</p><br>
+    </div>
+      <!-- <button class="button padding-large light-grey" style="margin-top:64px">LOAD MORE</button> -->
+  </div>
+
+</div>
+
+<!-- Modal for full size images on click-->
+<!-- <div id="modal01" class="modal black" onclick="this.style.display='none'">
+  <span class="button large black display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="modal-content animate-zoom center transparent padding-64">
+    <img id="img01" class="image">
+    <p id="caption" class="opacity large"></p>
+  </div>
+</div> -->
+
+<!-- Sixth Parallax Image/Education -->
+<div class="bgimg-6 display-container opacity-min">
+  <div class="display-middle">
+     <span class="xxlarge text-white wide">IZAICINĀJUMI</span>
+  </div>
+</div>
+
+<!-- Container/Interests   -->
+<div class="content container padding-64" id="challenges">
+  <h1 class="center">MANI IZAICINĀJUMI</h1>
+  <h3 class="center"><em>TURPINĀT SAPŅOT</em></h3><br>
+  <p class="center"><em>Es sevi izaicinu nekad nebeigt turpināt sapņot! Nav nekā neinteresantāka par pelēcību un rutīnu. Dzīve sastāv no mirkļiem, un tie ir jānodzīvo spilgti un jēgpilni. Kā daudzus, arī mani no došanās ceļā bieži vien attur bailes no nezināmā. Bailes nespēt un vēlme ieslīgt pašapmierinātībā. Tomēr jau vairākas reizes savā dzīvē es esmu sākusi visu no nulles. Un varu teikt, ka nav nekā iedvesmojošāka, kā sākt atkal visu no baltas lapas un iegūt sajūtu, ka es tomēr varu. Protams, ka ir grūti un bieži vien gribas padoties. Tomēr jaunas iespējas un jauni izaicinājumi maģiski vilina. Sajūta, ka nav robežu ir spārnojoša. Es gribu turpināt sapņot. Es daru visu, lai sasniegtu savas mazās un lielās dzīve virsotnes jebkurā jomā. Es gribu turpināt gribēt kaut ko sasniegt. Man ir sapnis noskriet maratonu. Man ir sapnis iemācīties gleznot. Man ir sapni apceļot pasauli. Man ir sapnis radīt tehnoloģiju, kas ir vajadzīga. Man ir sapnis iemācīties to uzprogrammēt. Es turpinu sapņot, jo robežu nav.</em></p><br>
+  <p class="center"><em>Klikšķini uz bildēm un uzzini vairāk</em></p><br>
+  <!-- <p class="center"><em>I have a very active lifestyle and many things that interest and excite me.<br> Click on the images to make them bigger</em></p><br> -->
+
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="row-padding center">
+    <div class="col m3">
+      <img src="images/flying1.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Es eju savu ceļu">
+      <p class="wide"><i class="fa fa-lightbulb-o"></i> Sapņo!</p><br>
+    </div>
+
+    <div class="col m3">
+      <img src="images/flying2.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Es eju savu ceļu">
+      <p class="wide"><i class="fa fa-arrow-right"></i> Nebaidies!</p><br>
+    </div>
+
+    <div class="col m3">
+      <img src="images/flying3.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Es eju savu ceļu">
+      <p class="wide"><i class="fa fa-arrow-right"></i> Dodies ceļā!</p><br>
+    </div>
+
+    <div class="col m3">
+      <img src="images/flying4.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Es eju savu ceļu">
+      <p class="wide"><i class="fa fa-arrow-up"></i> Sasniedz mērķi!</p><br>
+    </div>
+  </div>
+
+</div>
+
+<!-- Modal for full size images on click-->
+<!-- <div id="modal01" class="modal black" onclick="this.style.display='none'">
+  <span class="button large black display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="modal-content animate-zoom center transparent padding-64">
+    <img id="img01" class="image">
+    <p id="caption" class="opacity large"></p>
+  </div>
+</div> -->
+
+<!-- Seventh Parallax Image/Education -->
+<div class="bgimg-6 display-container opacity-min">
+  <div class="display-middle">
+     <span class="xxlarge text-white wide">KONTAKTI</span>
+  </div>
+</div>
+
+<!-- Container/Contact -->
+<div class="content container padding-64" id="contact">
+  <h1 class="center">SAZINIES AR MANI</h1>
+  <h3 class="center"><em>PRIECĀŠOS PAR TAVU ZIŅU!</em></h3>
+  <p class="center"><em>Es priecāšos iepazīties ar cilvēkiem, kas domā līdzīgi. Domu apmaiņa man ir ļoti vērtīga. Kāds ir tavs dzīves ceļš uz jaunām virsotnēm? Par ko tu sapņo?</em></p><br>
+
+  <!-- <div class="myform"> -->
+  <form id="myForm" action="https://www.w3schools.com/action_page.php" target="blank">
+
+  <div class="row padding-32 section">
+    <div class="col m4 container">
+      <img src="images/portrait3.png" class="image round" style="width:100%">
+    </div>
+    <div class="col m8 panel">
+      <div class="large margin-bottom">
+        <i class="fa fa-envelope fa-fw hover-text-black xlarge margin-right"></i><a href="mailto:iveta.zeltina@mail.com">iveta.zeltina@mail.com</a><br>
+        <!-- <i class="fa fa-envelope fa-fw hover-text-black xlarge margin-right"></i> Email: iveta.zeltina@mail.com<br> -->
+      </div>
+      <p>Uzraksti man ziņu:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="row-padding" style="margin:0 -16px 8px -16px">
+          <div class="half">
+            <input class="input border" type="text" placeholder="Vārds" required name="Name">
+          </div>
+          <div class="half">
+            <input class="input border" type="text" placeholder="E-pasts" required name="Email">
+          </div>
+        </div>
+        <input class="input border" type="text" placeholder="Ziņa" required name="Message">
+        <button class="button black right section" type="submit">
+          <i class="fa fa-paper-plane"></i> NOSŪTĪT ZIŅU
+        </button>
+        <input type="reset" value="Notīrīt formu">
+      </form>
+    </div>
+  </div>
+
+</form>
+<!-- <div> -->
+
+</div>
+
+<!-- Footer -->
+<footer class="center black padding-64 opacity hover-opacity-off">
+  <a href="#home" class="button light-grey"><i class="fa fa-arrow-up margin-right"></i>Uz augšu</a>
+  <div class="xlarge section">
+    <!--<i class="fa fa-facebook-official hover-opacity"</i>
+      <p href="https://www.facebook.com/iveta.zeltina/" target="_blank"><img src="images/facebook.png" alt="Facebook"></p>-->
+    <!--<a href="https://www.facebook.com/iveta.zeltina/" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+    <i class="fa fa-instagram hover-opacity"></i>
+    <a href="https://www.facebook.com/iveta.zeltina/" target="_blank"><img src="images/instagram.png" alt="Instagram"></a> -->
+    <!--<i class="fa fa-snapchat hover-opacity"></i>
+    <i class="fa fa-pinterest-p hover-opacity"></i>
+    <i class="fa fa-twitter hover-opacity"></i>
+    <i class="fa fa-linkedin hover-opacity"></i>-->
+    <div class="social">
+        <!--<h5><a id="home">Follow me on Social Media</a></h5> -->
+        <div class="social-btns">
+        <a href="https://www.facebook.com/iveta.zeltina" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/ivetazeltina/" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+        </div>
+    </div>
+    <br>
+    <!-- <div class="ul-footer"> -->
+        <!-- <li><p>©2023 Iveta Zeltiņa iz20025</p></li> -->
+        <!-- <p class="center"><em>©2023 Iveta Zeltiņa iz20025</em></p> -->
+        <p class="wide"><font size="2">©2023 Iveta Zeltiņa iz20025</p>
+    <!-- </div> -->
+  </div>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "bar" + " card" + " animate-top" + " white";
+    } else {
+        navbar.className = navbar.className.replace(" card animate-top white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("show") == -1) {
+        x.className += " show";
+    } else {
+        x.className = x.className.replace(" show", "");
+    }
+}
+</script>
+
+</body>
+</html>

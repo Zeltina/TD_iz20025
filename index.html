@@ -1,0 +1,574 @@
+<!-- Info about the author
+name: Iveta Zeltina
+student ID number: iz20025 -->
+<!DOCTYPE html>
+<!--<html>-->
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>My Own Way</title>
+<link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/exam.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+var maxLength = 300;
+$(".show-read-more").each(function(){
+    var myStr = $(this).text();
+    if($.trim(myStr).length > maxLength){
+        var newStr = myStr.substring(0, maxLength);
+        var removedStr = myStr.substring(maxLength, $.trim(myStr).length);
+        $(this).empty().html(newStr);
+        $(this).append(' <a href="javascript:void(0);" class="read-more">read more...</a>');
+        $(this).append('<span class="more-text">' + removedStr + '</span>');
+    }
+});
+$(".read-more").click(function(){
+    $(this).siblings(".more-text").contents().unwrap();
+    $(this).remove();
+});
+});</script>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="top">
+  <div class="bar" id="myNavbar">
+    <a class="bar-item button hover-black hide-medium hide-large right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="bar-item button">HOME</a>
+    <a href="#about" class="bar-item button hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#education" class="bar-item button hide-small"><i class="fa fa-graduation-cap"></i> EDUCATION</a>
+    <a href="#experience" class="bar-item button hide-small"><i class="fa fa-briefcase"></i> EXPERIENCE</a>
+    <a href="#programming" class="bar-item button hide-small"><i class="fa fa-code"></i> PROGRAMMING</a>
+    <a href="#interests" class="bar-item button hide-small"><i class="fa fa-heart"></i> INTERESTS</a>
+    <a href="#challenges" class="bar-item button hide-small"><i class="fa fa-rocket"></i> CHALLENGES</a>
+    <a href="#contact" class="bar-item button hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="file:///C:/Users/Iveta/LU/00_LU/Timekla%20dizains/LIELAIS%20DARBS/iz20025_2/indexLV.html" class="bar-item button hide-small"><i class="fa  fa-globe"></i> LV</a>
+    <!-- <a href="#" class="bar-item button hide-small right hover-black"> -->
+      <!-- <i class="fa fa-search"></i> -->
+      <!-- mans -->
+      <!-- <form role="search" id="form">
+      <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form> -->
+    <!-- mans -->
+    <!-- </a> -->
+  </div>
+
+
+  <!-- <script>
+        const f = document.getElementById('form');
+        const q = document.getElementById('query');
+        const google = 'https://www.google.com/search?q=site%3A+';
+        const site = 'file:///C:/Users/Iveta/LU/00_LU/Timekla%20dizains/LIELAIS%20DARBS/iz20025_2/index.html';
+
+        function submitted(event) {
+          event.preventDefault();
+          const url = google + site + '+' + q.value;
+          const win = window.open(url, '_blank');
+          win.focus();
+        }
+
+        f.addEventListener('submit', submitted);
+      </script> -->
+
+  <!-- Navbar/small screens -->
+  <div id="navDemo" class="bar-block white hide hide-large hide-medium">
+    <a href="#about" class="bar-item button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#education" class="bar-item button" onclick="toggleFunction()">EDUCATION</a>
+    <a href="#experience" class="bar-item button" onclick="toggleFunction()">EXPERIENCE</a>
+    <a href="#programming" class="bar-item button" onclick="toggleFunction()">PROGRAMMING</a>
+    <a href="#interests" class="bar-item button" onclick="toggleFunction()">INTERESTS</a>
+    <a href="#challenges" class="bar-item button" onclick="toggleFunction()">CHALLENGES</a>
+    <a href="#contact" class="bar-item button" onclick="toggleFunction()">CONTACT</a>
+    <a href="file:///C:/Users/Iveta/LU/00_LU/Timekla%20dizains/LIELAIS%20DARBS/iz20025_2/indexLV.html" class="bar-item button" onclick="toggleFunction()">LV</a>
+    <!-- <a href="#" class="bar-item button">SEARCH</a> -->
+  </div>
+</div>
+
+
+<!-- First Parallax Image/Slogan Text -->
+<div class="bgimg-1 display-container opacity-min" id="home">
+  <div class="display-middle" style="white-space:nowrap;">
+    <span class="center padding-large black xlarge wide animate-opacity">MY <span class="hide-small">OWN</span> WAY</span>
+  </div>
+</div>
+
+<!-- Container/About -->
+<div class="content container padding-64" id="about">
+  <h1 class="center">ABOUT ME</h1>
+  <h3 class="center"><em>ON THE WAY TO THE TOP</em></h3>
+  <p>I am an explorer. I perceive life as a cognitive process that gives me the opportunity to get to know myself, others and the world. Interesting - my guiding principle in life. Direction is my way of getting energy and transforming it into things that matter to me. Without limits, or not setting a frame for yourself - my approach to things that allows you not to be afraid to look outside the box, experiment and gain new useful experience. Consciousness – to do things consciously, in accordance with what is valuable to you and constantly reflect. Acceptance - to accept the different, even if it is not in accordance with my understanding of things and values.</p>
+  <div class="row">
+    <div class="col m6 center padding-large">
+      <p><b><i class="fa fa-user margin-right"></i>Iveta Zeltiņa</b></p><br>
+      <img src="images/portrait4.png" class="round image opacity hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="col m6 hide-small padding-large">
+      <p>Realize that the world is different, that people are different. My understanding of things is neither better nor worse - it's just mine. Be happy and wonder - every little thing experienced every day is a value that should be appreciated. People - communication with others allows me to get to know yourself better and learn not only to take, but also to give. Learning is interesting, so it is worth doing throughout your life, because only an interesting life is a valuable life. Without fear - life is a free flight and a continuous process of self-discovery. It is not worth regretting the lost, because the world is full of opportunities. They must be seen, chosen and enjoyed in the process of life's flight. Process - life should be seen as a process, not a beginning and an end, then it is easy to achieve a sense of fulfillment and happiness. No expectations - nobody deserves anything, I have to appreciate what is given. To do - everything is only in your own hands. Enjoy life on the way to the top!</p>
+    </div>
+  </div>
+</div>
+
+<div class="row center dark-grey padding-16">
+  <div class="quarter section">
+    <span class="xlarge">EDUCATION</span><br>
+    Never-ending Process
+  </div>
+  <div class="quarter section">
+    <span class="xlarge">EXPERIENCE</span><br>
+    Marketing and More
+  </div>
+  <div class="quarter section">
+    <span class="xlarge">INTERESTS</span><br>
+    Many and Various
+  </div>
+  <div class="quarter section">
+    <span class="xlarge">CHALLENGES</span><br>
+    Always and Everywhere
+  </div>
+</div>
+
+<!-- Second Parallax Image/Education -->
+<div class="bgimg-2 display-container opacity-min">
+  <div class="display-middle">
+     <span class="xxlarge text-white wide">EDUCATION</span>
+  </div>
+</div>
+
+<!-- Container/Education   -->
+<div class="content container padding-64" id="education">
+  <h1 class="center">MY EDUCATION</h1>
+  <h3 class="center"><em>FROM ECONOMICS TO PROGRAMMING</em></h3><br>
+  <p class="center"><em>Since I am interested in so many areas, I used to have a hard time choosing which career path to take. I ended up in television quite by accident, where I worked in the advertising and marketing department. So, my initial choice was economics and business management. Later, I expanded my knowledge in the field of political science and public relations, because when I worked in an advertising agency, building the company's image and brand communication were an integral part of the marketing strategy. And finally, I got to programming. I am currently studying at the Faculty of Computer Science of the University of Latvia.</em></p><br>
+  <p class="center"><em>Click on the images and read more</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="row-padding center">
+    <div class="col m3">
+      <img src="images/RTUen.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Riga Technical university">
+      <!-- <p class="wide"><i class="fa fa-laptop"></i>Marketing</p> -->
+    </div>
+
+    <div class="col m3">
+      <img src="images/economics.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bachelor's Degree in Social Sciences">
+      <!-- <p class="wide"><i class="fa fa-laptop"></i>Bachelor's Degree in Social Sciences</p> -->
+    </div>
+
+    <div class="col m3">
+      <img src="images/macibas1.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Graduated from first-level professional higher education at the Computer Science Faculty of the University of Latvia">
+      <!-- <p class="wide"><i class="fa fa-laptop"></i>Marketing</p> -->
+    </div>
+
+    <div class="col m3">
+      <img src="images/relations.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Master's Degree in Social Sciences">
+      <!-- <p class="wide"><i class="fa fa-laptop"></i>Marketing</p> -->
+    </div>
+  </div>
+
+  <div class="row-padding center section">
+    <div class="col m3">
+      <img src="images/politics.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Master's Degree in Social Sciences">
+      <!-- <p class="wide"><i class="fa fa-laptop"></i>Marketing</p> -->
+    </div>
+
+    <div class="col m3">
+      <img src="images/macibas3.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Qualification work: Development of customer orders data system in MS Dynamics AX platform">
+      <!-- <p class="wide"><i class="fa fa-laptop"></i>Marketing</p> -->
+    </div>
+
+    <div class="col m3">
+      <img src="images/programming.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bachelor studies">
+      <!-- <p class="wide"><i class="fa fa-laptop"></i>Marketing</p> -->
+    </div>
+
+    <div class="col m3">
+      <img src="images/LUen.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The University of Latvia">
+      <!-- <p class="wide"><i class="fa fa-laptop"></i>Marketing</p> -->
+    </div>
+      <!--<button class="button padding-large light-grey" style="margin-top:64px">LOAD MORE</button>-->
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="modal black" onclick="this.style.display='none'">
+  <span class="button large black display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="modal-content animate-zoom center transparent padding-64">
+    <img id="img01" class="image">
+    <p id="caption" class="opacity large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image/Education -->
+<div class="bgimg-3 display-container opacity-min">
+  <div class="display-middle">
+     <span class="xxlarge text-white wide">EXPERIENCE</span>
+  </div>
+</div>
+
+<!-- Container/Experience   -->
+<div class="content container padding-64" id="experience">
+  <h1 class="center">MY EXPERIENCE</h1>
+  <h3 class="center"><em>MARKETING, SALES, PROGRAMMING</em></h3><br>
+  <p class="center"><em>I have extensive experience in developing marketing and sales strategies for B2B products: software, mobile apps, machine translation tools, desktop proofreading tools, translation and localization service, etc. I have created and managed online and offline marketing campaigns, implemented digital marketing strategies: SMM, e-mail marketing, display and search advertising, etc. My responsibilities also included building the company's reputation, PR communication and event marketing. I have experience working in media, advertising and media agencies, real estate and technology companies. Now I have become a part of the company MBIT that has been involved in the implementation and maintenance of the Microsoft Dynamics AX business management system in Latvia and abroad.</em></p><br>
+  <p class="center"><em>Click on the images and read more</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="row-padding center">
+    <div class="col m3">
+      <img src="images/LNT.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Latvian Independent Television (LNT)">
+      <!-- <p class="wide"><i class="fa fa-laptop"></i>Marketing</p> -->
+    </div>
+
+    <div class="col m3">
+      <img src="images/MEC.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="MEC - one of the world's leading media agency networks">
+      <!-- <p class="wide"><i class="fa fa-laptop"></i>Bachelor's Degree in Social Sciences</p> -->
+    </div>
+
+    <div class="col m3">
+      <img src="images/MediaHouse.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Media House - the leading media planning and buying agency in Latvia">
+      <!-- <p class="wide"><i class="fa fa-laptop"></i>Marketing</p> -->
+    </div>
+
+    <div class="col m3">
+      <img src="images/Santa.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Publishing house ŽURNALS SANTA">
+      <!-- <p class="wide"><i class="fa fa-laptop"></i>Marketing</p> -->
+    </div>
+  </div>
+
+  <div class="row-padding center section">
+    <div class="col m3">
+      <img src="images/Tilde.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Tilde - the leading technology localization company in the Baltics">
+      <!-- <p class="wide"><i class="fa fa-laptop"></i>Marketing</p> -->
+    </div>
+
+    <div class="col m3">
+      <img src="images/DienasZurnali.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Publishing house Dienas Žurnāli">
+      <!-- <p class="wide"><i class="fa fa-laptop"></i>Marketing</p> -->
+    </div>
+
+    <div class="col m3">
+      <img src="images/Ztowers.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Zunda Towers - one of the highest building complexes in the Baltics">
+      <!-- <p class="wide"><i class="fa fa-laptop"></i>Marketing</p> -->
+    </div>
+
+    <div class="col m3">
+      <img src="images/MBIT.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="MBIT - Information Technology Company">
+      <!-- <p class="wide"><i class="fa fa-laptop"></i>Marketing</p> -->
+    </div>
+      <!--<button class="button padding-large light-grey" style="margin-top:64px">LOAD MORE</button>-->
+  </div>
+
+  <p class="large center padding-16">SKILL HIGHLIGHTS:</p>
+  <p class="wide"><i class="fa fa-comments"></i> Communication</p>
+  <div class="light-grey">
+    <div class="container padding-small dark-grey center" style="width:95%">95%</div>
+  </div><br>
+  <p class="wide"><i class="fa fa-handshake-o"></i> Collaboration</p>
+  <div class="light-grey">
+    <div class="container padding-small dark-grey center" style="width:90%">90%</div>
+  </div><br>
+  <p class="wide"><i class="fa fa-check-square"></i> Problem Solving</p>
+  <div class="light-grey">
+    <div class="container padding-small dark-grey center" style="width:85%">85%</div>
+  </div><br>
+  <p class="wide"><i class="fa fa-users"></i> Teamwork</p>
+  <div class="light-grey">
+    <div class="container padding-small dark-grey center" style="width:80%">80%</div>
+  </div><br>
+
+</div>
+
+<!-- Modal for full size images on click-->
+<!-- <div id="modal01" class="modal black" onclick="this.style.display='none'">
+  <span class="button large black display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="modal-content animate-zoom center transparent padding-64">
+    <img id="img01" class="image">
+    <p id="caption" class="opacity large"></p>
+  </div>
+</div> -->
+
+<!-- Forhth Parallax Image/Education -->
+<div class="bgimg-4 display-container opacity-min">
+  <div class="display-middle">
+     <span class="xxlarge text-white wide">PROGRAMMING</span>
+  </div>
+</div>
+
+<!-- Container/Programmig  -->
+<div class="content container padding-64" id="programming">
+  <h1 class="center">PROGRAMMING</h1>
+  <h3 class="center"><em>INFORMATION SYSTEMS DEVELOPER</em></h3><br>
+  <p class="center"><em>Information Systems Developer | Student of the Bachelor's Study Program of Computer Science at LU | X++ Object-oriented Language | Passionate about Software Engineering (Databases, IS, Software Testing)</em></p><br>
+  <p class="center"><em>Even though my prior work and educational experience does not completely relate to the area of programming and IT as such. However, I have now transitioned to this seemingly new area. I am currently working as an information systems developer with the X++ object-oriented language. I believe – the combination of my marketing background, academic engineering knowledge, and newly acquired programming experience would provide value for any team adding unique perspective, fresh look and understanding.</em></p><br>
+  <p class="center"><em>Click on the images and read more</em></p><br>
+
+  <p class="large center padding-16">SKILLS & KNOWLEDGE:</p><br>
+
+  <div class="row-padding center">
+    <div class="col m3">
+      <img src="images/languages.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Programming Languages">
+      <p class="wide"><i class="fa fa-code"></i> Languages</p><br>
+    </div>
+
+    <div class="col m3">
+      <img src="images/technologies.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Technologies">
+      <p class="wide"><i class="fa fa-laptop"></i> Technologies</p><br>
+    </div>
+
+    <div class="col m3">
+      <img src="images/DB.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Database-related languages">
+      <p class="wide"><i class="fa fa-database"></i> DB languages</p><br>
+    </div>
+
+    <div class="col m3">
+      <img src="images/Framework.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Frameworks">
+      <p class="wide"><i class="fa fa-th-large"></i> Frameworks</p><br>
+    </div>
+  </div>
+
+</div>
+
+<!-- Fifth Parallax Image/Interests -->
+<div class="bgimg-5 display-container opacity-min">
+  <div class="display-middle">
+    <span class="xxlarge text-white wide">INTERESTS</span>
+  </div>
+</div>
+
+<!-- Container/Interests   -->
+<div class="content container padding-64" id="interests">
+  <h1 class="center">MY INTERESTS</h1>
+  <h3 class="center"><em>SO MANY THINGS TO TRY</em></h3><br>
+  <p class="center"><em>For many years now, my daily life has been unimaginable without sports activities, because it recharges and gives me energy. I have been dancing since childhood. I like to be creative in the kitchen, cooking dinner for my children, weaving, and painting with oil paints. I like to spend my summers in the countryside, working in the garden. But I get vivid impressions and new ideas when I take a backpack, put on sports shoes and go out into nature or travel outside of Latvia.</em></p><br>
+  <p class="center"><em>Click on the images and read more</em></p><br>
+  <!-- <p class="center"><em>I have a very active lifestyle and many things that interest and excite me.<br> Click on the images to make them bigger</em></p><br> -->
+
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="row-padding center">
+    <div class="col m3">
+      <img src="images/sport1.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Run around Riga">
+      <p class="wide"><i class="fa fa-battery-full"></i> Sport</p><br>
+    </div>
+
+    <div class="col m3">
+      <img src="images/cooking1.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Homemade cake - mmm, how delicious">
+      <p class="wide"><i class="fa fa-cutlery"></i> Cooking</p><br>
+    </div>
+
+    <div class="col m3">
+      <img src="images/gardening1.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Garden benefits are the healthiest">
+      <p class="wide"><i class="fa fa-pagelines"></i> Gardening</p><br>
+    </div>
+
+    <div class="col m3">
+      <img src="images/dancing1.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Dancing on the stage of the Song and Dance Festival">
+      <p class="wide"><i class="fa fa-heart"></i> Dancing</p><br>
+    </div>
+  </div>
+
+  <div class="row-padding center section">
+    <div class="col m3">
+      <img src="images/tautasterps.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="My own woven folk costume">
+      <p class="wide"><i class="fa fa-thumbs-up"></i> Ethnography</p><br>
+    </div>
+
+    <div class="col m3">
+      <img src="images/painting1.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Beginner's first steps in oil painting">
+      <p class="wide"><i class="fa fa-paint-brush"></i> Painting</p><br>
+    </div>
+
+    <div class="col m3">
+      <img src="images/ausana1.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Weaving process">
+      <p class="wide"><i class="fa fa-life-ring"></i> Weaving</p><br>
+    </div>
+
+    <div class="col m3">
+      <img src="images/travelling1.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Georgia - I'm coming">
+      <p class="wide"><i class="fa fa-plane"></i> Traveling</p><br>
+    </div>
+      <!-- <button class="button padding-large light-grey" style="margin-top:64px">LOAD MORE</button> -->
+  </div>
+
+</div>
+
+<!-- Modal for full size images on click-->
+<!-- <div id="modal01" class="modal black" onclick="this.style.display='none'">
+  <span class="button large black display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="modal-content animate-zoom center transparent padding-64">
+    <img id="img01" class="image">
+    <p id="caption" class="opacity large"></p>
+  </div>
+</div> -->
+
+<!-- Sixth Parallax Image/Education -->
+<div class="bgimg-6 display-container opacity-min">
+  <div class="display-middle">
+     <span class="xxlarge text-white wide">CHALLENGES</span>
+  </div>
+</div>
+
+<!-- Container/Interests   -->
+<div class="content container padding-64" id="challenges">
+  <h1 class="center">MY CHALLENGES</h1>
+  <h3 class="center"><em>NEVER STOP DREAMING</em></h3><br>
+  <p class="center"><em>I challenge myself to never stop dreaming! There is nothing more uninteresting than grayness and routine. Life consists of moments, and they should be lived vividly and meaningfully. Like many, the fear of the unknown often holds me back from going on the road. Fear of failure and the desire to sink into complacency. However, several times in my life I have started from scratch. And I can say that there is nothing more inspiring than starting everything again from a blank page and getting the feeling that I can do it. Of course, it is difficult and I often want to give up. However, new opportunities and new challenges magically beckon. The feeling of having no boundaries is overwhelming. I want to keep dreaming. I do everything to reach the small and big peaks of my life in any area. I want to keep wanting to achieve something. I have a dream to run a marathon. I have a dream to learn to paint. I have a dream to travel the world. I have a dream to create the technology that is needed. I have a dream to learn how to program it. I keep dreaming because there are no limits.</em></p><br>
+  <p class="center"><em>Click on the images and read more</em></p><br>
+  <!-- <p class="center"><em>I have a very active lifestyle and many things that interest and excite me.<br> Click on the images to make them bigger</em></p><br> -->
+
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="row-padding center">
+    <div class="col m3">
+      <img src="images/flying1.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="I go my own way">
+      <p class="wide"><i class="fa fa-lightbulb-o"></i> Dream on!</p><br>
+    </div>
+
+    <div class="col m3">
+      <img src="images/flying2.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="I go my own way">
+      <p class="wide"><i class="fa fa-arrow-right"></i> Don't be afraid!</p><br>
+    </div>
+
+    <div class="col m3">
+      <img src="images/flying3.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="I go my own way">
+      <p class="wide"><i class="fa fa-arrow-right"></i> Go ahead!</p><br>
+    </div>
+
+    <div class="col m3">
+      <img src="images/flying4.png" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="I go my own way">
+      <p class="wide"><i class="fa fa-arrow-up"></i> Reach the top!</p><br>
+    </div>
+  </div>
+
+</div>
+
+<!-- Modal for full size images on click-->
+<!-- <div id="modal01" class="modal black" onclick="this.style.display='none'">
+  <span class="button large black display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="modal-content animate-zoom center transparent padding-64">
+    <img id="img01" class="image">
+    <p id="caption" class="opacity large"></p>
+  </div>
+</div> -->
+
+<!-- Seventh Parallax Image/Education -->
+<div class="bgimg-6 display-container opacity-min">
+  <div class="display-middle">
+     <span class="xxlarge text-white wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container/Contact -->
+<div class="content container padding-64" id="contact">
+  <h1 class="center">CONTACT ME</h1>
+  <h3 class="center"><em>I'D LOVE YOUR FEEDBACK!</em></h3>
+  <p class="center"><em>I will be happy to meet like-minded people. The exchange of ideas is very valuable to me. What is your life path to new heights? What are you dreaming about?</em></p><br>
+
+  <!-- <div class="myform"> -->
+  <form id="myForm" action="https://www.w3schools.com/action_page.php" target="blank">
+
+  <div class="row padding-32 section">
+    <div class="col m4 container">
+      <img src="images/portrait3.png" class="image round" style="width:100%">
+    </div>
+    <div class="col m8 panel">
+      <div class="large margin-bottom">
+        <i class="fa fa-envelope fa-fw hover-text-black xlarge margin-right"></i><a href="mailto:iveta.zeltina@mail.com">iveta.zeltina@mail.com</a><br>
+        <!-- <i class="fa fa-envelope fa-fw hover-text-black xlarge margin-right"></i> Email: iveta.zeltina@mail.com<br> -->
+      </div>
+      <p>Leave me a note:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="row-padding" style="margin:0 -16px 8px -16px">
+          <div class="half">
+            <input class="input border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="half">
+            <input class="input border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="input border" type="text" placeholder="Message" required name="Message">
+        <button class="button black right section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+        <input type="reset" value="Reset form">
+      </form>
+    </div>
+  </div>
+
+</form>
+<!-- <div> -->
+
+</div>
+
+<!-- Footer -->
+<footer class="center black padding-64 opacity hover-opacity-off">
+  <a href="#home" class="button light-grey"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
+  <div class="xlarge section">
+    <!--<i class="fa fa-facebook-official hover-opacity"</i>
+      <p href="https://www.facebook.com/iveta.zeltina/" target="_blank"><img src="images/facebook.png" alt="Facebook"></p>-->
+    <!--<a href="https://www.facebook.com/iveta.zeltina/" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+    <i class="fa fa-instagram hover-opacity"></i>
+    <a href="https://www.facebook.com/iveta.zeltina/" target="_blank"><img src="images/instagram.png" alt="Instagram"></a> -->
+    <!--<i class="fa fa-snapchat hover-opacity"></i>
+    <i class="fa fa-pinterest-p hover-opacity"></i>
+    <i class="fa fa-twitter hover-opacity"></i>
+    <i class="fa fa-linkedin hover-opacity"></i>-->
+    <div class="social">
+        <!--<h5><a id="home">Follow me on Social Media</a></h5> -->
+        <div class="social-btns">
+        <a href="https://www.facebook.com/iveta.zeltina" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/ivetazeltina/" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+        </div>
+    </div>
+    <br>
+    <!-- <div class="ul-footer"> -->
+        <!-- <li><p>©2023 Iveta Zeltiņa iz20025</p></li> -->
+        <!-- <p class="center"><em>©2023 Iveta Zeltiņa iz20025</em></p> -->
+        <p class="wide"><font size="2">©2023 Iveta Zeltiņa iz20025</p>
+    <!-- </div> -->
+  </div>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "bar" + " card" + " animate-top" + " white";
+    } else {
+        navbar.className = navbar.className.replace(" card animate-top white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("show") == -1) {
+        x.className += " show";
+    } else {
+        x.className = x.className.replace(" show", "");
+    }
+}
+</script>
+
+</body>
+</html>
