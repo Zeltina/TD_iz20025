@@ -23,32 +23,32 @@ body, html {
   min-height: 100%;
 }
 
-/* Second image (Portfolio) */
+/* Second image (Education) */
 .bgimg-2 {
-  background-image: url("../images/rokas.jpg");
+  background-image: url("../images/rokas.png");
   min-height: 400px;
 }
 
-/* Third image (Contact) */
+/* Third image (Experience) */
 .bgimg-3 {
-  background-image: url("../images/rokas.jpg");
+  background-image: url("../images/rokas.png");
   min-height: 400px;
 }
 
-/* Forth image (Contact) */
+/* Forth image (Interests) */
 .bgimg-4 {
-  background-image: url("../images/rokas.jpg");
+  background-image: url("../images/rokas.png");
   min-height: 400px;
 }
 
-/* Fifth image (Contact) */
+/* Fifth image (Challenges) */
 .bgimg-5 {
-  background-image: url("../images/rokas.jpg");
+  background-image: url("../images/rokas.png");
   min-height: 400px;
 }
 /* Sixth image (Contact) */
 .bgimg-6 {
-  background-image: url("../images/rokas.jpg");
+  background-image: url("../images/rokas.png");
   min-height: 400px;
 }
 
